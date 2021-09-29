@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  app:
+    container_name: sample_streamlit
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    tty: True
+    ports:
+      - '12000:8501'

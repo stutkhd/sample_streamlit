@@ -1,0 +1,1 @@
+alias app='docker-compose up app'
